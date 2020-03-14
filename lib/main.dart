@@ -15,9 +15,12 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.deepPurple,
       ),
       body: Center(
-        child: FlatButton(
+        child: FlatButton.icon(
           onPressed: printMessage,
-          child: Text("Button here!"),
+         icon: Icon(
+           Icons.textsms
+         ),
+          label: Text("pressy pressy"),
           color: Colors.deepPurpleAccent,
           textColor: Colors.white,
         ),
