@@ -15,14 +15,12 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.deepPurple,
       ),
       body: Center(
-        child: FlatButton.icon(
+        child: IconButton(
           onPressed: printMessage,
          icon: Icon(
            Icons.textsms
          ),
-          label: Text("pressy pressy"),
           color: Colors.deepPurpleAccent,
-          textColor: Colors.white,
         ),
       ),
       floatingActionButton: FloatingActionButton(
