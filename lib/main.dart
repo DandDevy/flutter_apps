@@ -15,7 +15,12 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.deepPurple,
       ),
       body: Center(
-        child: Image.asset("assets/japan-garden.jpg"),
+        child: FlatButton(
+          onPressed: printMessage,
+          child: Text("Button here!"),
+          color: Colors.deepPurpleAccent,
+          textColor: Colors.white,
+        ),
       ),
       floatingActionButton: FloatingActionButton(
         child: Text("Good"), onPressed: printMessage,
