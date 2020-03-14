@@ -16,15 +16,17 @@ class Home extends StatelessWidget {
       ),
       body: Center(
         child: Image(
-          image: NetworkImage("https://i.pinimg.com/236x/64/19/c7/6419c717efc098bc29936722b27dee77--purple-garden-flowers-garden.jpg"),
-        ),
+          image: AssetImage("assets/japan-garden.jpg"),
+        )
       ),
       floatingActionButton: FloatingActionButton(
-        child: Text("Good"), onPressed: () {
-        print("How are you feeling today?");
-      },
+        child: Text("Good"), onPressed: printMessage,
         backgroundColor: Colors.deepPurple[700],
       ) ,
     );
   }
+}
+
+printMessage(){
+  print("How are you feeling today?");
 }
