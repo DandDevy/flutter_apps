@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 void main() => runApp(MaterialApp(
-  home: Home()
+  home: Home(),
+  theme: ThemeData(fontFamily: "TheGirlNextDoor"),
 ));
 
 class Home extends StatelessWidget {
@@ -14,15 +15,8 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.deepPurple,
       ),
       body: Center(
-        child: Text(
-          "How is your day?",
-          style: TextStyle(
-            color: Colors.lightGreen,
-            fontSize: 23.0,
-            fontWeight: FontWeight.bold,
-            letterSpacing: 2.0,
-            fontFamily: 'TheGirlNextDoor',
-          ),
+        child: Image(
+          image: NetworkImage("https://i.pinimg.com/236x/64/19/c7/6419c717efc098bc29936722b27dee77--purple-garden-flowers-garden.jpg"),
         ),
       ),
       floatingActionButton: FloatingActionButton(
