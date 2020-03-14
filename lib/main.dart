@@ -21,6 +21,7 @@ class Home extends StatelessWidget {
             fontSize: 23.0,
             fontWeight: FontWeight.bold,
             letterSpacing: 2.0,
+            fontFamily: 'TheGirlNextDoor',
           ),
         ),
       ),
